@@ -12,7 +12,6 @@ q(S, R) :-
 % Inicio da gramatica
 inicio(R) --> 
 	afirmativa(L),
-	{ write(L), nl },
 	{ responde_afi(L, R) }.
 
 inicio(R) -->
