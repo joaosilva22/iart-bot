@@ -19,6 +19,8 @@
 
 :- initialization main.
 
+:- [hotels].
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    Server    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 main :-
@@ -39,7 +41,7 @@ process_request(JSONIn, JSONOut):-
 % TODO: change the implementation of the answer predicate to 
 
 answer(_Sender, Text, Answer):-
-  Answer = Text.
+  q(Text, Answer).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%    Web Services Definition    %%%%%%%%%%%%%%%%%%%%%%%%%
 
