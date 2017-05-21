@@ -42,7 +42,7 @@ process_request(JSONIn, JSONOut):-
 
 answer(_Sender, Text, Answer):-
 	atom_string(Input, Text),
-	q(Input, Output),
+	q(Input, Output), !,
 	atom_string(Output, String),
 	Answer = String.
 
