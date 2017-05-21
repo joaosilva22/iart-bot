@@ -42,8 +42,8 @@ process_request(JSONIn, JSONOut):-
 
 answer(_Sender, Text, Answer):-
 	%atom_string(Input, Text),
-	q('Quantos sao os hoteis do porto?', Output), 
-	atom_string(Ouput, Answer).
+	q('Quantos sao os hoteis do porto?', Output),
+	atom_string(Ouput, Answer), Answer = "LUL".
 
 %%%%%%%%%%%%%%%%%%%%%%%%%    Web Services Definition    %%%%%%%%%%%%%%%%%%%%%%%%%
 
