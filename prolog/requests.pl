@@ -17,9 +17,9 @@
                      spacing(next_argument)
                    ]).
 
-:- initialization main.
-
 :- [hotels].
+
+:- initialization main.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    Server    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
