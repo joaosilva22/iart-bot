@@ -42,6 +42,7 @@ process_request(JSONIn, JSONOut):-
 
 answer(_Sender, Text, Answer):-
 	atom_string(Atom, Text),
+	atom_string(Atom, String),
 	Answer = Text.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%    Web Services Definition    %%%%%%%%%%%%%%%%%%%%%%%%%
