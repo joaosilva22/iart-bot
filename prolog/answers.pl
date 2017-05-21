@@ -239,6 +239,9 @@ obtem_contexto(M1, [I-A-O-M]) :-
 	obtem_novo_objeto(O1, M1, O),
 	obtem_novos_modificadores(M1, M2, M).
 
+obtem_contexto(_, _) :-
+	assert(erro_sem(2)), fail.
+
 % Obtem o novo objeto dado o antigo e os novos modificadores
 obtem_novo_objeto(O1, [_-[O2]|_], O2) :-
 	local(O1), local(O2).

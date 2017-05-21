@@ -19,7 +19,7 @@ inicio(R) -->
 	{ responde_int(L, T), retractall(contexto(_)), assert(contexto(L)), escreve_resposta_int(T, R) }.
 
 inicio(M) -->
-	{ contexto(_) ; assert(erro_sem(2)), fail },
+%	{ contexto(_) ; assert(erro_sem(2)), fail },
 	aditiva_sem_contexto(M).
 
 inicio(['Erro semantico.'], _, _) :- 
