@@ -6,7 +6,8 @@
 % Ponto de entrada
 q(S, R) :-
 	parse_input(S, L),
-	inicio(R, L, []).
+	inicio(T, L, []),
+	atomica_list_concat(T, R).
 
 % Inicio da gramatica
 inicio(R) --> 
