@@ -42,7 +42,7 @@ process_request(JSONIn, JSONOut):-
 
 answer(_Sender, Text, Answer):-
 	stom_string(Text, Input),
-	q(Input, Output), 
+	q('Quantos sao os hoteis do porto?', Output), 
 	atom_string(Ouput, Answer).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%    Web Services Definition    %%%%%%%%%%%%%%%%%%%%%%%%%
