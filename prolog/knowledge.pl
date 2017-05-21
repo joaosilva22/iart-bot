@@ -1,4 +1,5 @@
 % Verifica se X tem a propriedade Y
+ser(X, X).
 ser(_, categoria).
 ser(X, hotel) :- hotel(X).
 ser(X, servico) :- servico(X).
