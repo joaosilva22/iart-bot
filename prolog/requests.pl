@@ -44,6 +44,7 @@ answer(_Sender, Text, Answer):-
 	atom_string(Input, Text),
 	q(Input, Output), !,
 	atom_string(Output, String),
+	write(String),
 	Answer = String.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%    Web Services Definition    %%%%%%%%%%%%%%%%%%%%%%%%%
