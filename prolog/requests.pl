@@ -41,6 +41,7 @@ process_request(JSONIn, JSONOut):-
 % TODO: change the implementation of the answer predicate to 
 
 answer(_Sender, Text, Answer):-
+	atom_string(Atom, Text),
 	Answer = Text.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%    Web Services Definition    %%%%%%%%%%%%%%%%%%%%%%%%%
