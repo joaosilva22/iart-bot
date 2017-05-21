@@ -22,15 +22,15 @@ inicio(M) -->
 	{ contexto(_) ; assert(erro_sem(2)), fail },
 	aditiva_sem_contexto(M).
 
-inicio(['Erro semântico.'], _, _) :- 
+inicio(['Erro semantico.'], _, _) :- 
 	erro_sem(1),
 	retractall(erro_sem(_)).
 
-inicio(['Erro semântico (Falta de contexto).'], _, _) :-
+inicio(['Erro semantico (Falta de contexto).'], _, _) :-
 	erro_sem(2),
 	retractall(erro_sem(_)).
 
-inicio(['Erro sintático.'], _, _) :-
+inicio(['Erro sintatico.'], _, _) :-
 	retractall(erro_sem(_)).
 
 % Processa frases afirmativas

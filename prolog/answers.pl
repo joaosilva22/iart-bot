@@ -6,9 +6,9 @@ responde_afi([A-O-S-Ms-Mo|Os], R) :-
 	testa_mod(O, Mo),
 	responde_afi(Os, R).
 
-responde_afi([], 'Sim.').
+responde_afi([], ['Sim.']).
 
-responde_afi(_, 'Não.').
+responde_afi(_, ['Nao.']).
 
 % Responde a frases interrogativas
 responde_int([ql-A-O-M|Os], [ql-R-A-O-M|Rs]) :-
