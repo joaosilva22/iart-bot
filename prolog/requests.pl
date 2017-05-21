@@ -41,6 +41,7 @@ process_request(JSONIn, JSONOut):-
 % TODO: change the implementation of the answer predicate to 
 
 answer(_Sender, Text, Answer):-
+	write(Text),
 	atom_string(Input, Text),
 	q('Quantos sao os hoteis do porto?', Output), 
 	atom_string(Ouput, Answer).
